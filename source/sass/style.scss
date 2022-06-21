@@ -1,5 +1,5 @@
-// Начните писать стили здесь
+// global
 
-body {
-  background-color: green;
-}
+@import "global/variables.scss";
+@import "global/fonts";
+@import "global/global";
