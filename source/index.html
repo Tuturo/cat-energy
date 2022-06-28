@@ -2,20 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Cat Energy</title>
   </head>
   <body class="main-page">
     <header class="header">
       <div class="header__wrapper">
+        <nav class="header__nav main-nav main-nav--js">
 
-        <a class="header__logo" href="#">
-          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Cat Energy»" width="33" height="37">
-        </a>
+          <div class="mobile">
+            <a class="header__logo mobile__logo-icon" href="#">
+              <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Cat Energy»" width="33" height="37">
+            </a>
+            <img class="mobile__logo-name" src="img/logo_name_cat-energy.svg" alt="Интернет-магазин Cat Energy" width="101" height="18">
+            <button class="mobile__toggle mobile__toggle--open"><span class="visually-hidden">Навигация</span></button>
+          </div>
 
-        <nav class="header__nav main-nav">
-
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--js-open">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link">
                 Главная
@@ -32,8 +36,6 @@
               </a>
             </li>
           </ul>
-
-          <button class="main-nav__toggle"><span class="visually-hidden">Навигация</span></button>
 
         </nav>
       </div>
