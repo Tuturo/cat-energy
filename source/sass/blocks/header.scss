@@ -2,34 +2,44 @@
   list-style: none;
 }
 
+.mobile__toggle {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .header__wrapper {
-    width: 320px;
+    max-width: 480px;
     margin: 0 auto;
   }
 
   .mobile {
-    width: 280px;
+    min-width: 280px;
     height: 38px;
     padding: 15px 20px;
     border-bottom: 2px solid #e6e6e6;
 
     display: flex;
     align-items: center;
+    position: relative;
   }
 
-  .mobile__logo-name {
-    margin-left: 56px;
+  .mobile__logo-icon::after {
+    content: "";
+    position: absolute;
+    width: 101px;
+    height: 18px;
+    top: calc(50% - 9px);
+    left: calc(50% - 50px);
+    background-image: url("../../img/logo_name_cat-energy.svg");
   }
 
   .main-nav__list {
-    width: 280px;
     margin: 0;
     padding: 0;
   }
 
   .main-nav__item {
-    width: 280px;
+    min-width: 280px;
     margin: 0;
     padding: 20px;
     border-bottom: 2px solid #e6e6e6;
@@ -46,7 +56,6 @@
   }
 
   .mobile__toggle {
-    display: none;
     width: 24px;
     height: 18px;
 
@@ -87,4 +96,7 @@
       background-image: url("../../img/mobile-hamburger--open.svg");
     }
   }
+}
+
+@media (max-width: 1199px) {
 }
