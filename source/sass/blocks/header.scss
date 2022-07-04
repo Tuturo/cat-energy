@@ -6,7 +6,12 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
   .header__wrapper {
     max-width: 480px;
     margin: 0 auto;
@@ -31,11 +36,6 @@
     top: calc(50% - 9px);
     left: calc(50% - 50px);
     background-image: url("../../img/logo_name_cat-energy.svg");
-  }
-
-  .main-nav__list {
-    margin: 0;
-    padding: 0;
   }
 
   .main-nav__item {
@@ -98,5 +98,47 @@
   }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) {
+  .header__wrapper {
+    max-width: 1199px;
+    padding: 0 30px;
+    margin: 42px auto 0;
+  }
+
+  // .header__logo {
+
+  // }
+
+  .header__nav {
+    // min-width: 708px
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .main-nav__item a {
+    color: black;
+  }
+
+  .main-nav__item--current {
+    border-bottom: 2px solid $basic_green;
+  }
 }
