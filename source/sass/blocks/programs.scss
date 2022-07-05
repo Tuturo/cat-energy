@@ -1,15 +1,83 @@
 .programs {
-  width: 280px;
-  margin: 25px 20px;
+  max-width: 480px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  min-width: 280px;
 
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+
+.programs__item {
+  padding: 20px 20px;
+  background-color: #f2f2f2;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.programs__item::before {
+  content: "";
+}
+
+.programs__item--weight-loss::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../img/cat__weight-loss.svg");
+}
+
+.programs__item--weight-gain::before {
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/cat__weight-gain.svg");
+}
+
+.programs__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.programs__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programs__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+  position: relative;
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 10px;
+  top: calc(50% - 5px);
+  right: -49px;
+  background-image: url("../../img/icon_arrow.svg");
+  background-repeat: no-repeat;
 }
