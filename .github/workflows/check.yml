@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - master
-      - mobile-version
   pull_request:
     branches: '*'
 
