@@ -1,8 +1,61 @@
 .promo {
-  width: 280px;
-  padding: 0 20px;
+  min-width: 280px;
+  padding: 25px 20px;
+  position: relative;
 
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
+  justify-items: center;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  top: 0;
+  background-image: url("../../img/bg-cat_mobile_1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center;
+  background-origin: padding-box;
+  z-index: -1;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 302px;
+  top: 0;
+  background-color: #63A63B;
+  z-index: -2;
+}
+
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: white;
+  text-align: center;
+  margin: 10px 0 25px;
+}
+
+.promo__slogan {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.promo__button {
+  width: 280px;
+  font-size: 14px;
+  line-height: 18px;
 }
