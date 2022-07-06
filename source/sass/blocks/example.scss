@@ -1,0 +1,133 @@
+.example {
+  min-width: 280px;
+  padding: 25px 20px;
+  background-color: #eaeaea;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  margin-bottom: 42px;
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: auto;
+  gap: 40px 31px;
+}
+
+.example__item {
+  position: relative;
+  width: 124px;
+  height: 64px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.example__name {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 10px 12px;
+  background-color: #eaeaea;
+  z-index: 1;
+  position: absolute;
+  width: 77px;
+  bottom: -25px;
+}
+
+.example__info {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__last-item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+
+.example__last-name {
+  text-align: right;
+}
+
+.example__last-info {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 240px auto;
+  row-gap: 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.slider__controls {
+  display: none;
+}
+
+.slider__mobile-controls {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  width: 228px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__mobile-scale {
+  width: 84px;
+  height: 14px;
+  background-color: white;
+  padding: 0 6px;
+  border: 1px solid $special_grey;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+}
+
+.slider__mobile-toggle {
+  width: 35px;
+  height: 6px;
+  background-color: $basic_green;
+  border-radius: 6px;
+}
