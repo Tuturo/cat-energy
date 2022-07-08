@@ -1,0 +1,90 @@
+.footer {
+  min-width: 320px;
+}
+
+.map {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.map__info {
+  max-width: 480px;
+  padding: 30px 20px;
+
+  display: grid;
+  grid-template-columns: 140px 140px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map__message {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.map__adress {
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
+
+.map__location {
+  display: flex;
+}
+
+.map__image {
+  margin: auto;
+}
+
+.footer__links {
+  min-width: 280px;
+  padding: 0 20px;
+  background-color: $basic_grey;
+
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
+.footer__logo {
+  margin: 0;
+  padding: 35px 0;
+  line-height: 0;
+  text-align: center;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__socials {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer__socials-item {
+  line-height: 0;
+}
+
+.developed-by {
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.developed-by__name {
+  font-weight: 300;
+  font-size: 16px;
+  color: $special_dark-grey;
+}
+
+.developed-by__icon {
+  fill: $special_dark-grey;
+}
