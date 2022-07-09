@@ -50,9 +50,12 @@
       <section class="promo">
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
+        <picture class="promo__product-img">
+          <source media="(min-width: 768px) and (min-resolution: 2dppx)" srcset="img/index-can-tablet-2.png" width="709" height="609">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet-1.png" width="709" height="609">
           <source media="(min-resolution: 2dppx)" srcset="img/index-can-mobile-2x.png">
-          <img class="promo__product-img" src="img/index-can-mobile-1.png" width="280" height="270" alt="Изображение продукции магазина: Cat Energy Pro с курочкой">
+          <img src="img/index-can-mobile-1.png" width="280" height="270" alt="Изображение продукции магазина: Cat Energy Pro с курочкой">
+
         </picture>
         <button class="promo__button button" type="button">Подобрать программу</button>
       </section>
