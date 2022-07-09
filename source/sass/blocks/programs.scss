@@ -28,6 +28,7 @@
 
 .programs__item::before {
   content: "";
+  background-repeat: no-repeat;
 }
 
 .programs__item--weight-loss::before {
@@ -80,4 +81,66 @@
   right: -49px;
   background-image: url("../../img/icon_arrow.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .programs {
+    min-width: 768px;
+    padding: 0 30px;
+  }
+
+  .programs__list {
+    row-gap: 30px;
+  }
+
+  .programs__item {
+    padding: 55px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .programs__item::before {
+    position: absolute;
+  }
+
+  // .programs__item::after {
+  //   content: "";
+  //   position: absolute;
+  // }
+
+  .programs__item--weight-loss::before {
+    width: 200px;
+    height: 211px;
+    right: 62px;
+    top: calc(50% - 105px);
+    background-size: 200px 211px;
+  }
+
+  .programs__item--weight-gain::before {
+    width: 268px;
+    height: 200px;
+    top: calc(50% - 100px);
+    right: calc(21% - 134px);
+    background-size: 268px 200px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
+
+  .programs__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    width: 377px;
+    padding-bottom: 48px;
+    border-bottom: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+  }
 }
