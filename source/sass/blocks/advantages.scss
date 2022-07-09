@@ -56,3 +56,70 @@
 .advantages__item--alarm::before {
   background-image: url("../../img/icon__alarm.svg");
 }
+
+@media (min-width: 768px) {
+  .advantages {
+    min-width: 768px;
+    padding: 10px 30px 75px;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__list {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 135px;
+    row-gap: 140px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__item {
+    font-size: 16px;
+    line-height: 24px;
+    color: $special_dark-grey;
+    width: 245px;
+
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .advantages__item::before {
+    margin-bottom: 37px;
+  }
+
+  .advantages__item::after {
+    content: "";
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 200px;
+    color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .advantages__item--leaf::after {
+    content: "1";
+    right: 17px;
+  }
+
+  .advantages__item--tub::after {
+    content: "2";
+    right: 20px;
+  }
+
+  .advantages__item--eat::after {
+    content: "3";
+    right: 0;
+  }
+
+  .advantages__item--alarm::after {
+    content: "4";
+    right: 30px;
+  }
+}
