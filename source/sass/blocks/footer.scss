@@ -60,13 +60,11 @@
   padding: 35px 0;
   line-height: 0;
   text-align: center;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .footer__socials {
   margin: 0;
   padding: 20px 0;
-  border-bottom: 1px solid #d9d9d9;
   list-style: none;
 
   display: flex;
@@ -74,8 +72,16 @@
   justify-content: space-around;
 }
 
+@media (max-width: 767px) {
+  .footer__logo,
+  .footer__socials {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
 .footer__socials-item {
   line-height: 0;
+  padding: 10px;
 }
 
 .developed-by {
@@ -99,17 +105,16 @@
 @media (min-width: 768px) {
   .footer {
     min-width: 768px;
-    // padding: 0 30px;
   }
 
   .map {
-     max-width: none;
-     min-width: 768px;
+    max-width: none;
+    min-width: 768px;
   }
 
   .map__info {
-     max-width: none;
-     padding: 55px 72px;
+    max-width: none;
+    padding: 55px 72px;
   }
 
   .map__message {
@@ -123,5 +128,11 @@
     font-size: 16px;
     line-height: 25px;
     text-align: right;
+  }
+
+  .footer__links {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
   }
 }
