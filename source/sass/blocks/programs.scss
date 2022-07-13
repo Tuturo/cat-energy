@@ -104,11 +104,6 @@
     position: absolute;
   }
 
-  // .programs__item::after {
-  //   content: "";
-  //   position: absolute;
-  // }
-
   .programs__item--weight-loss::before {
     width: 200px;
     height: 211px;
@@ -142,5 +137,24 @@
 
   .programs__link {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .programs {
+    max-width: 1600px;
+    padding: 0 110px;
+  }
+
+  .programs__list {
+    grid-template-columns: 47.5% 47.5%;
+    gap: 5%;
+  }
+
+  .programs__item {
+  }
+
+  .programs__description {
+    border-bottom: none;
   }
 }
