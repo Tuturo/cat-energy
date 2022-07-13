@@ -12,7 +12,7 @@
   padding: 30px 20px;
 
   display: grid;
-  grid-template-columns: 140px 140px;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
 }
@@ -23,20 +23,27 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
 }
 
 .map__adress {
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  width: 140px;
 }
 
 .map__location {
   display: flex;
+  justify-content: center;
 }
 
-.map__image {
-  margin: auto;
+.map__location picture {
+  line-height: 0;
+}
+
+.map__img {
+  width: 100%;
 }
 
 .footer__links {
@@ -87,4 +94,34 @@
 
 .developed-by__icon {
   fill: $special_dark-grey;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    min-width: 768px;
+    // padding: 0 30px;
+  }
+
+  .map {
+     max-width: none;
+     min-width: 768px;
+  }
+
+  .map__info {
+     max-width: none;
+     padding: 55px 72px;
+  }
+
+  .map__message {
+    font-size: 20px;
+    line-height: 26px;
+    width: 175px;
+  }
+
+  .map__adress {
+    width: 160px;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+  }
 }
