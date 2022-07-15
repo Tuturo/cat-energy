@@ -138,11 +138,23 @@
 }
 
 @media (min-width: 1200px) {
+  .map {
+    display: grid;
+    grid-template-columns: 110px 40% auto 110px;
+    grid-template-rows: auto auto auto;
+  }
+
   .map__info {
-    padding: 55px 80px;
+    padding: 30px 50px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: 2;
+
+    background-color: white;
   }
 
   .map__location {
-    min-width: 1200px
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
   }
 }
