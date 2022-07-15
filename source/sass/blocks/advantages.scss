@@ -127,13 +127,14 @@
 @media (min-width: 1200px) {
   .advantages {
     max-width: none;
-    padding: 0 110px;
+    box-sizing: border-box;
+    padding: 0 80px;
     margin-top: 50px;
     margin-bottom: 40px;
   }
 
   .advantages__list {
-    grid-template-columns: repeat(4, 246px);
+    grid-template-columns: repeat(4, 220px);
     grid-template-rows: auto;
     column-gap: 0;
     justify-content: space-between;

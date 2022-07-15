@@ -136,3 +136,13 @@
     padding: 10px 30px;
   }
 }
+
+@media (min-width: 1200px) {
+  .map__info {
+    padding: 55px 80px;
+  }
+
+  .map__location {
+    min-width: 1200px
+  }
+}
