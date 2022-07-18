@@ -1,0 +1,59 @@
+.parameters__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.parameters__item {
+  list-style: none;
+}
+
+.parameters__label {
+  color: $special_dark-grey;
+}
+
+.parameters__list {
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.parameters__item {
+  display: flex;
+  align-items: center;
+}
+
+.parameters__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.parameters__label {
+  margin-right: 10px;
+}
+
+.parameters__label sup {
+  vertical-align: baseline;
+}
+
+.parameters__input {
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  flex-grow: 1;
+}
+
+.parameters__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_grey;
+}
