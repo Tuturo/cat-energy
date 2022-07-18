@@ -102,21 +102,21 @@
           </fieldset>
 
           <fieldset class="form__fieldset contacts">
-            <legend class="contacts__title">
-              Контактные данные (владельца кота)
+            <legend class="contacts__legend">
+              <span class="contacts__title">Контактные данные (владельца кота)</span>
             </legend>
             <ul class="contacts__list">
-              <li class="contacts__item">
-                <label for="email">
+              <li class="contacts__item contacts__item--email">
+                <label class="contacts__label" for="email">
                   E-mail:<sup>*</sup>
                 </label>
-                <input type="text" name="email" id="email" placeholder="kuklachev@mail.com">
+                <input class="contacts__input" type="text" name="email" id="email" placeholder="kuklachev@mail.com">
               </li>
-              <li class="contacts__item">
-                <label for="phone">
+              <li class="contacts__item contacts__item--phone">
+                <label class="contacts__label" for="phone">
                   Телефон:<sup>*</sup>
                 </label>
-                <input type="text" name="phone" id="phone" placeholder="8(960) 900-60-90">
+                <input class="contacts__input" type="text" name="phone" id="phone" placeholder="8(960) 900-60-90">
               </li>
             </ul>
           </fieldset>
