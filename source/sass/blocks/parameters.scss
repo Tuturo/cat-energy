@@ -2,35 +2,22 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .parameters__item {
   list-style: none;
-}
-
-.parameters__label {
-  color: $special_dark-grey;
-}
-
-.parameters__list {
-  padding: 0 20px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.parameters__item {
   display: flex;
   align-items: center;
 }
 
-.parameters__item:not(:last-child) {
-  margin-bottom: 13px;
+.parameters__label {
+  color: $special_dark-grey;
+  margin-right: 10px;
 }
 
-.parameters__label {
-  margin-right: 10px;
+.parameters__item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .parameters__label sup {
