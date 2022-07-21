@@ -173,11 +173,13 @@
 // form-page
 
 @media (min-width: 1200px) {
-  .form-page .main-nav__item a {
+  .form-page .main-nav__item a,
+  .catalog-page .main-nav__item a {
     color: black;
   }
 
-  .form-page .main-nav__item--current {
+  .form-page .main-nav__item--current,
+  .cataog-page .main-nav__item--current {
     border-bottom: 2px solid $basic_green;
   }
 }
