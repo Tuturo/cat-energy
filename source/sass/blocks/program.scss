@@ -47,3 +47,24 @@
   left: 9px;
   top: calc(50% - 6px);
 }
+
+@media (min-width: 768px) {
+  .program {
+    grid-column: 1 / -1;
+  }
+
+  .program__list {
+    border: 1px solid #d9d9d9;
+    margin: 30px 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .program {
+    grid-column: 2 / 3;
+  }
+
+  .program__list {
+    margin: 0 110px 0 0;
+  }
+}

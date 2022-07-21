@@ -42,3 +42,52 @@
   color: $special_dark-grey;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .comment {
+    grid-column: 1 / -1;
+  }
+
+  .comment__legend {
+    padding-left: 0;
+  }
+
+  .comment__legend::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: $basic_green;
+    // flex-grow: 1;
+  }
+
+  .comment__title {
+    width: auto;
+    margin-left: 19px;
+    margin-right: 19px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .comment__textarea {
+    padding: 30px 70px;
+  }
+
+  .comment__textarea textarea {
+    padding: 15px 19px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comment__legend::before {
+    width: 70px;
+  }
+
+  .comment__title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .comment__textarea {
+    padding: 30px 110px;
+  }
+}

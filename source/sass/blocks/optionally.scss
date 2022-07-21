@@ -27,19 +27,14 @@
   margin: 0;
   padding: 0 20px;
 
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 10px;
 }
 
 .optionally__item {
   list-style: none;
   position: relative;
   display: flex;
-  align-items: center;
-}
-
-.optionally__item:not(:last-child) {
-  margin-bottom: 13px;
 }
 
 .optionally__label {
@@ -62,4 +57,60 @@
   background-image: url("../../img/active_checkbox.svg");
   background-size: 30px 30px;
   border: none;
+}
+
+@media (min-width: 768px) {
+  .optionally {
+    grid-column: 1 / -1;
+  }
+
+  .optionally__legend {
+    padding-left: 0;
+  }
+
+  .optionally__legend::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: $basic_green;
+  }
+
+  .optionally__title {
+    width: auto;
+    margin-left: 19px;
+    margin-right: 19px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .optionally__list {
+    padding: 30px 70px;
+
+    grid-template-columns: auto auto;
+    column-gap: 62px;
+    row-gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .optionally__legend::before {
+    width: 70px;
+  }
+
+  .optionally__title {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .optionally__list {
+    padding: 30px 110px 0;
+
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0;
+    justify-content: space-between;
+  }
+
+  .optionally__item {
+    width: 221px;
+  }
 }

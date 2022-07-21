@@ -44,3 +44,24 @@
   text-transform: uppercase;
   color: $special_grey;
 }
+
+@media (min-width: 768px) {
+  .parameters {
+    grid-column: 1 / -1;
+  }
+
+  .parameters__list {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .parameters {
+    grid-column: 1 / 2;
+  }
+
+  .parameters__list {
+    padding: 0;
+    margin-left: 110px;
+  }
+}
