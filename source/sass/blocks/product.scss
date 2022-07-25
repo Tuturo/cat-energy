@@ -176,14 +176,11 @@
   }
 
   .product__button {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-  }
-
-  .product__button {
     padding: 9px;
     width: 245px;
     height: 38px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
     justify-self: center;
   }
 
