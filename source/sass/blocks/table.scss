@@ -1,0 +1,60 @@
+.table {
+  margin: 0 20px;
+}
+
+table.table {
+  display: grid;
+}
+
+.table__item:first-child {
+  border-top: 1px solid $special_grey;
+}
+
+.table__item {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 12px;
+  padding: 20px 0;
+  border-bottom: 1px solid $special_grey;
+}
+
+.table__header {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+
+  grid-column: 1 / -1;
+  justify-self: left;
+}
+
+.table__quantity {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+}
+
+.table__price {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special_dark-grey;
+  justify-self: right;
+}
+
+.table__button {
+  grid-column: 1 / -1;
+  display: flex;
+}
+
+.table__button .button {
+  font-size: 16px;
+  line-height: 20px;
+  flex-grow: 1;
+}
