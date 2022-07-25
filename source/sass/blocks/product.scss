@@ -215,3 +215,20 @@
     margin-top: auto;
   }
 }
+
+@media (min-width: 768px) {
+  .option-product__wrapper::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: $basic_green;
+    // flex-grow: 1;
+  }
+
+  .option-product__title {
+    width: auto;
+    margin: 70px 19px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
