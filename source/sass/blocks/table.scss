@@ -58,3 +58,33 @@ table.table {
   line-height: 20px;
   flex-grow: 1;
 }
+
+@media (min-width: 768px) {
+  .table {
+    margin: 0 30px;
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+  }
+
+  .table__item {
+    padding: 25px 38px;
+    grid-template-columns: 316px auto 100px;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    align-items: center;
+  }
+
+  .table__header {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .table__quantity,
+  .table__price {
+    font-size: 16px;
+    line-height: 20px;
+    justify-self: right;
+  }
+}
