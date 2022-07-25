@@ -117,7 +117,8 @@
   }
 
   .product__card {
-    width: 324px;
+    min-width: 324px;
+    max-width: 450px;
     border: none;
     padding: 0;
 
