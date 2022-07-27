@@ -88,3 +88,22 @@ table.table {
     justify-self: right;
   }
 }
+
+@media (min-width: 1200px) {
+  .table {
+    margin: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .table__item {
+    padding: 10px 0;
+    grid-template-columns: auto auto 80px 184px;
+    grid-template-rows: auto;
+    column-gap: 38px;
+  }
+
+  .table__button {
+    grid-column: 4 / 5;
+  }
+}

@@ -42,7 +42,7 @@
   color: white;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .gift {
     margin: 70px 30px;
     min-width: 708px;
@@ -60,8 +60,22 @@
   }
 }
 
-@media (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (min-resolution: 2dppx) and (max-width: 1199px) {
   .gift {
     background-image: url("../../img/gift-tablet_2x.png");
+  }
+}
+
+@media (min-width: 1200px) {
+  .gift {
+    margin: 0;
+    height: 100%;
+    background-image: url("../../img/gift-desktop_1x.png");
+  }
+}
+
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
+  .gift {
+    background-image: url("../../img/gift-desktop_2x.png");
   }
 }

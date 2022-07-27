@@ -264,3 +264,27 @@
     margin-top: 50px;
   }
 }
+
+@media (min-width: 1200px) {
+  .option-product__wrapper::before {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: $basic_green;
+  }
+
+  .option-product__title {
+    width: auto;
+    margin: 70px 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .option-product__content-wrapper {
+    margin: 0 70px 80px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 80px;
+  }
+}
