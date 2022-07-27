@@ -11,13 +11,13 @@
   align-items: center;
 }
 
+.parameters__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
 .parameters__label {
   color: $special_dark-grey;
   margin-right: 10px;
-}
-
-.parameters__item:not(:last-child) {
-  margin-bottom: 13px;
 }
 
 .parameters__label sup {
@@ -43,6 +43,18 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_grey;
+}
+
+.parameters__input:hover {
+  border: 1px solid $special_grey;
+}
+
+.parameters__input:focus {
+  outline-color: $special_dark-grey;
+}
+
+.parameters__input--error:focus {
+  outline-color: $status_error;
 }
 
 @media (min-width: 768px) {

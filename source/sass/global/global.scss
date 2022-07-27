@@ -44,3 +44,11 @@ a {
   background-color: $basic_green;
   box-sizing: border-box;
 }
+
+.button:hover {
+  background-color: $basic_grenn-2;
+}
+
+.button:active {
+  opacity: 30%;
+}

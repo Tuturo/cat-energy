@@ -8,6 +8,14 @@
   padding: 0;
 }
 
+.header__logo:hover {
+  opacity: 80%;
+}
+
+.header__logo:active {
+  opacity: 60%;
+}
+
 @media (max-width: 767px) {
   .header__wrapper {
     max-width: 480px;
@@ -181,5 +189,13 @@
   .form-page .main-nav__item--current,
   .catalog-page .main-nav__item--current {
     border-bottom: 2px solid $basic_green;
+  }
+
+  .main-nav__item a:hover {
+    opacity: 60%;
+  }
+
+  .main-nav__item a:active {
+    opacity: 30%;
   }
 }

@@ -92,6 +92,18 @@
   color: $special_grey;
 }
 
+.contacts__input:hover {
+  border: 1px solid $special_grey;
+}
+
+.contacts__input:focus {
+  outline-color: $special_dark-grey;
+}
+
+.contacts__input--error:focus {
+  outline-color: $status_error;
+}
+
 @media (min-width: 768px) {
   .contacts {
     grid-column: 1 / -1;

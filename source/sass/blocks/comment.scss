@@ -43,6 +43,10 @@
   text-transform: uppercase;
 }
 
+.comment__textarea textarea:focus {
+  outline-color: $special_dark-grey;
+}
+
 @media (min-width: 768px) {
   .comment {
     grid-column: 1 / -1;

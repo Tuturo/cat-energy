@@ -263,6 +263,10 @@
   .product__button--all {
     margin-top: 50px;
   }
+
+  .product__button--all:hover {
+    background-color: $special_grey-2;
+  }
 }
 
 @media (min-width: 1200px) {
