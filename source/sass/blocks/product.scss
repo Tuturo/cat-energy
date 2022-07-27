@@ -220,7 +220,6 @@
     width: 30px;
     height: 2px;
     background-color: $basic_green;
-    // flex-grow: 1;
   }
 
   .option-product__title {
@@ -228,5 +227,40 @@
     margin: 70px 19px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .product {
+    margin: 0 80px;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 0;
+    justify-content: space-between;
+  }
+
+  .product__card {
+    min-width: auto;
+    width: 245px;
+    height: 510px;
+    grid-template-columns: auto 180px auto;
+  }
+
+  .product__title {
+    width: 145px;
+    justify-self: center;
+  }
+
+  .product__button {
+    width: 180px;
+  }
+
+  .product__card--all {
+    width: 241px;
+    height: 506px;
+    grid-template-columns: auto 180px auto;
+  }
+
+  .product__button--all {
+    margin-top: 50px;
   }
 }
